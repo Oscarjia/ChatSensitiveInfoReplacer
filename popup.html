@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sensitive Info Replacer</title>
+  <style>
+    body {
+      width: 250px;
+      font-family: Arial, sans-serif;
+    }
+    .input-group {
+      margin: 10px 0;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Customize Replace Info</h1>
+  <div class="input-group">
+    <label for="patterns">Patterns (regex):</label>
+    <textarea id="patterns" rows="6" style="width: 100%;"></textarea>
+  </div>
+  <div class="input-group">
+    <label for="replacement">Replacement Text:</label>
+    <input type="text" id="replacement" style="width: 100%;" />
+  </div>
+  <button id="saveBtn">Save</button>
+  <script src="popup.js"></script>
+</body>
+</html>
